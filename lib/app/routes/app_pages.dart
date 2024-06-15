@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/edit_store_info/bindings/edit_store_info_binding.dart';
+import '../modules/edit_store_info/views/edit_store_info_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/home_screen/bindings/home_screen_binding.dart';
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.STAMP_DETAIL,
       page: () => const StampDetailView(),
       binding: StampDetailBinding(),
+    ),
+    GetPage(
+      name: _Paths.EDIT_STORE_INFO,
+      page: () => const EditStoreInfoView(),
+      binding: EditStoreInfoBinding(),
     ),
   ];
 }

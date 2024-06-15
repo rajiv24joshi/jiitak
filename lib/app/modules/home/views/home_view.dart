@@ -35,9 +35,11 @@ class HomeView extends GetView<HomeController> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.toNamed(Routes.EDIT_STORE_INFO);
+              },
               child: const Text(
-                "Screen 1",
+                "Edit Store Info",
               ),
             ),
           ],
